@@ -15,7 +15,7 @@
 
 - [Instruções de API](./documentation/working-api.md)
 
-> ## Arquiteturas e metodologias utilizadas
+> ## Arquiteturas, metodologias e ferramentas utilizadas
 
 - [Arquitetura do projeto](./documentation/project-architecture.md)
 
