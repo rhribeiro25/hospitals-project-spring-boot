@@ -30,12 +30,12 @@
 1. Configurar os dados de seu banco de dados de dados no **application.properties**
 2. criar um banco de dados chamado **manage-labs-db**
 
-> ### Rodando aplicação Spring Boot local
+> ### Rodando a aplicação Spring Boot localmente
 
 1. Atalizar Gradle para baixar as dependências
 2. Clicar com o Botão direito em cima do arquivo **ManageLabsApplication** e depois selecionar **Run**
 
-> ### Rodando aplicação com Docker
+> ### Rodando a aplicação com Docker
 
 1. Usar o comando **$ sudo systemctl start docker** para executar o docker
 2. Usar o comando **$ sudo systemctl enable docker** para executar o docker juntamente com o sistema
@@ -45,7 +45,7 @@
 6. Acessar o menu **View -> Tool Windows -> Services
 7. Criar conexão com o Docker do tipo **Unix Socket**
 
-> ### Rodando aplicação através da imagem Docker
+> ### Rodando a aplicação através da imagem Docker
 
 1. Baixar a imagem em [Docker Hub](https://hub.docker.com/repository/docker/rhribeiro25/manage-labs)
 2. Executar o seguinte comando **$ docker run -it -p 9090:9090 rhribeiro25/manage-labs:1.0.3**
