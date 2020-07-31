@@ -14,10 +14,8 @@
 4.  ✅ Remover logicamente um exame ativo.
 5.  ✅ Um exame pode estar associado a mais de um laboratório;
 6.  ✅ O cadastro de exame é considerado ativo e recebe um id gerado automaticamente.
-7.  ✅ Associar um exame ativo à um laboratório ativo;
-8.  ✅ Desassociar um exame ativo de um laboratório ativo;
-9.  ✅ Possibilidade de executar cadastro, atualização e remoção em lote;
-10. ✅ Endpoint que faz a busca por nome do exame e retorna todos os laboratórios associados a esse exame.
+7.  ✅ Possibilidade de executar cadastro, atualização e remoção em lote;
+8.  ✅ Endpoint que faz a busca por nome do exame e retorna todos os laboratórios associados a esse exame.
 
 > ## Casos de sucesso
 
