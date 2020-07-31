@@ -1,8 +1,8 @@
 > # APIs construídas no treinamento
 
-1. [Exame](./documentation/examination.md)
-2. [Laboratório](./documentation/laboratory.md)
-3. [Associação](./documentation/association.md)
+- [Exame](./documentation/examination.md)
+- [Laboratório](./documentation/laboratory.md)
+- [Associação](./documentation/association.md)
 
 > # Credenciais admin para acesso as APIs
 
@@ -15,31 +15,16 @@
 
 > # Instruções de API
 
+- [Configuração de Ambiente](./documentation/working-api.md)
+
 > # Arquitetura do projeto
+
+- [Configuração de Ambiente](./documentation/project-architecture.md)
 
 > # Arquitetura do AWS
 
-> ### Rodando a aplicação Spring Boot localmente
+- [Configuração de Ambiente](./documentation/aws-architecture.md)
 
-1. Atalizar Gradle para baixar as dependências
-2. Clicar com o Botão direito em cima do arquivo **ManageLabsApplication** e depois selecionar **Run**
-
-> ### Rodando a aplicação com Docker
-
-1. Usar o comando **$ sudo systemctl start docker** para executar o docker
-2. Usar o comando **$ sudo systemctl enable docker** para executar o docker juntamente com o sistema
-3. Acessar menu **Gradle** do canto direito, após **projectName -> Tasks -> Docker**
-4. Usar a opção **DockerClean** para limpar o cache
-5. Usar a opção **Docker** para gerar nova imagem no Docker
-6. Acessar o menu **View -> Tool Windows -> Services
-7. Criar conexão com o Docker do tipo **Unix Socket**
-8. Criar e executar um container através da imagem gerada
-
-> ### Rodando a aplicação através da imagem Docker
-
-1. Usar o comando **$ sudo systemctl start docker** para executar o docker
-2. Usar o comando **$ sudo systemctl enable docker** para executar o docker juntamente com o sistema
-3. Executar o seguinte comando **$ docker run -it -p 9090:9090 rhribeiro25/manage-labs:1.0.3**
 
 > # Instruções para utilização da API
 
