@@ -1,15 +1,15 @@
-> ## APIs construídas no treinamento
+> # APIs construídas no treinamento
 
 1. [Exame](./requirements/examination.md)
 2. [Laboratório](./requirements/laboratory.md)
 3. [Associação](./requirements/association.md)
 
-> ## Credenciais admin para acesso as APIs
+> # Credenciais admin para acesso as APIs
 
 - **Login:** admin
 - **Password:** manageLabs@2020
 
-> ## Instruções para configuração do ambiente de desenvolvimento
+> # Instruções para configuração do ambiente de desenvolvimento
 
 > ### Softwares a serem instalados
 
@@ -44,6 +44,7 @@
 5. Usar a opção **Docker** para gerar nova imagem no Docker
 6. Acessar o menu **View -> Tool Windows -> Services
 7. Criar conexão com o Docker do tipo **Unix Socket**
+8. Criar e executar um container através da imagem gerada
 
 > ### Rodando a aplicação através da imagem Docker
 
@@ -51,7 +52,7 @@
 2. Usar o comando **$ sudo systemctl enable docker** para executar o docker juntamente com o sistema
 3. Executar o seguinte comando **$ docker run -it -p 9090:9090 rhribeiro25/manage-labs:1.0.3**
 
-> ## Instruções para utilização da API
+> # Instruções para utilização da API
 
 - [GitHub](https://github.com/rhribeiro25/manageLabs): A aplicação pode ser executada facilmente como uma aplicação Spring Boot tradicional, na porta 9090, o banco de dados configurado é o MySQL contido no Amazon RDS.
 - [Docker Hub](https://hub.docker.com/repository/docker/rhribeiro25/manage-labs): Como alternativa podemos executada facilmente a aplicação pela imagem Docker contida no Docker Hub, também na porta 9090, o banco de dados configurado é o MySQL contido no Amazon RDS.
@@ -64,7 +65,7 @@
 - [labs-update](src/main/resources/files/csv/labs-update.csv): Arquivo para atualização de Laboratórios em lote.
 - [labs-delete](src/main/resources/files/csv/labs-delete.csv): Arquivo para remoção lógica de Laboratórios em lote.
 
-> ## Proposta para Amazon Web Services Architecture
+> # Proposta para Amazon Web Services Architecture
 
 ![Diagrama da aplicação e serviços AWS utilizados](src/main/resources/images/manage-labs-architecture.jpg)
 
