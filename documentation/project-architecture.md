@@ -1,20 +1,93 @@
-# Instruções para configuração do ambiente de desenvolvimento
+# Arquitetura e ferramentas utilizadas no projeto
 
-> ### Softwares a serem instalados
+> ## Princípios
 
-- [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html): Instalar o Java JDK 14
-- [Maven](https://maven.apache.org/download.cgi?Preferred=ftp://ftp.osuosl.org/pub/apache): Instalar Maven
-- [Docker Engine](https://docs.docker.com/docker-for-windows/install): Instalar Docker Engine
-- [Docker Machine](https://docs.docker.com/machine/install-machine/): Instalar Docker Machine
-- [Intellij IDE](https://www.jetbrains.com/pt-br/idea/download/#section=windows): Instalar IDE Intellij
+* Single Responsibility Principle (SRP)
+* Open Closed Principle (OCP)
+* Liskov Substitution Principle (LSP)
+* Interface Segregation Principle (ISP)
+* Dependency Inversion Principle (DIP)
+* Separation of Concerns (SOC)
+* Don't Repeat Yourself (DRY)
+* You Aren't Gonna Need It (YAGNI)
+* Keep It Simple, Silly (KISS)
+* Composition Over Inheritance
+* Small Commits
 
-> ### Confirando IDE
+> ## Design Patterns
 
-1. Baixar projeto Git
-2. Importar em Intellij IDE
-3. Instalar plugins **Lombok** e **Docker** em **file -> settings, opção plugins**
+* Factory
+* Adapter
+* Composite
+* Decorator
+* Proxy
+* Dependency Injection
+* Abstract Server
+* Composition Root
+* Builder
 
-> ### Configurando Banco de Dados
+> ## Metodologias e Designs
 
-1. Alterar configurações de banco de dados no arquivo **application.properties**
-2. Criar um banco de dados chamado **manage-labs-db**
+* TDD
+* Clean Architecture
+* DDD
+* Conventional Commits
+* GitFlow
+* Modular Design
+* Dependency Diagrams
+* Use Cases
+* Continuous Integration
+* Continuous Delivery
+* Continuous Deployment
+
+> ## Bibliotecas e Ferramentas
+* Lombok
+* Swagger
+
+> ## Features do Spring
+
+* Spring MVC
+* Spring Data
+* Spring Security
+* Spring Batch
+* Spring Boot
+
+> ## Features do Git
+
+* Alias
+* Log Personalizado
+* Branch
+* Reset
+* Amend
+* Tag
+* Stash
+* Rebase
+* Merge
+
+> ## Features do Java
+* Java 8
+
+> ## Features de Testes
+
+* Testes Unitários
+* Testes de Integração
+* Cobertura de Testes
+* Test Doubles
+* Mocks
+* Stubs
+* Spies
+* Fakes
+
+> ## Features do MongoDb
+
+* Connect e Reconnect
+* Collections
+* InsertOne e InserMany
+* Find, FindOne e FindOneAndUpdate
+* DeleteMany
+* UpdateOne
+* Aggregation (Match, Group, Unwind, Lookup, AddFields, Project, Sort)
+* ObjectId
+* Upsert e ReturnOriginal
+* Push, Divide, Multiply, ArrayElemAt, Cond, Sum
+* Filter, Map, Reduce, MergeObjects, ConcatArrays
