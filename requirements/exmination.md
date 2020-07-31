@@ -21,11 +21,15 @@
 
 > ## Casos de sucesso
 
+> ### Salvar
+
 1.  ✅ Recebe uma requisição do tipo **POST** na rota **/manage-labs/examinations/create**
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
 3.  ✅ Valida o tamanho do campo **nome** sendo de 7 a 63 caracteres
 4.  ✅ **Cadastra** um novo exame
 5.  ✅ Retorna **201** e o exame persistido
+
+> ### Salvar em lote
 
 1.  ✅ Recebe uma requisição do tipo **POST** na rota **/manage-labs/examinations/create-by-batch**
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
@@ -33,11 +37,15 @@
 4.  ✅ **Cadastra** exames através de arquivo CSV
 5.  ✅ Retorna **201** com COMPLETED
 
+> ### Atualizar
+
 1.  ✅ Recebe uma requisição do tipo **UPDATE** na rota **/manage-labs/examinations/update**
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
 3.  ✅ Valida o tamanho do campo **nome** sendo de 7 a 63 caracteres
 4.  ✅ **Atualiza** determinado exame
 5.  ✅ Retorna **200** e o exame atualizado
+
+> ### Atualizar em lote
 
 1.  ✅ Recebe uma requisição do tipo **UPDATE** na rota **/manage-labs/examinations/update-by-batch**
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
@@ -45,29 +53,43 @@
 4.  ✅ **Atualiza** exames através de arquivo CSV
 5.  ✅ Retorna **200** com COMPLETED
 
+> ### Deletar
+
 1.  ✅ Recebe uma requisição do tipo **DELETE** na rota **/manage-labs/examinations/delete**
 2.  ✅ **Deleta** logicamente determinado exame
 3.  ✅ Retorna **200** com a mensagem de sucesso
+
+> ### Deletar em lote
 
 1.  ✅ Recebe uma requisição do tipo **DELETE** na rota **/manage-labs/examinations/delete-by-batch**
 2.  ✅ **Deleta** logicamente exames através de arquivo CSV
 3.  ✅ Retorna **200** com COMPLETED
 
+> ### Buscar por ID
+
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-by-id**
 2.  ✅ **Busca** o exame através de um id válido
 3.  ✅ Retorna **200** e o exame consultado
+
+> ### Buscar todos
 
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-all**
 2.  ✅ **Busca** todos os exames com paginação
 3.  ✅ Retorna **200** e a lista de exames
 
+> ### Buscar por status
+
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-by-status**
 2.  ✅ **Busca** todos os exames com paginação através de um deterninado status válido
 3.  ✅ Retorna **200** e a lista de exames
 
+> ### Buscar laboratorios por nome de exame
+
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-labs-by-exam-name**
 2.  ✅ **Busca** todos os laboratórios com paginação através de um deterninado nome de exame válido
 3.  ✅ Retorna **200** e a lista de exames
+
+> ### Buscar por data de criação "DE" e "ATE"
 
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-by-createdat-between**
 2.  ✅ **Busca** todos os exames com paginação através de deterninadas datas **DE** e **ATÉ**
