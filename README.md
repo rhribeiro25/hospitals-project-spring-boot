@@ -22,12 +22,5 @@
 - [Arquitetura AWS](./documentation/aws-architecture.md)
 
 
-> # Proposta para Amazon Web Services Architecture
-
-![Diagrama da aplicação e serviços AWS utilizados](./documentation/manage-labs-architecture.jpg)
-
-
-
 
 “O dia que você acreditar ter atingido todo o seu potencial é o dia que não aconteceu. Por que você ainda tem o HOJE.” – Autor: Nick Vujicic
-
