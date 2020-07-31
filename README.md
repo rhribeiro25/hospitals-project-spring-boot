@@ -4,48 +4,53 @@
 2. [Laboratório](./requirements/laboratory.md)
 3. [Associação](./requirements/association.md)
 
+> ## Credenciais admin para acesso as APIs
 
-# Serviços a serem desenvolvidos:
+**Login:** admin
+**Password:** manageLabs@2020
 
-**Modelos**
+> ## Instruções para configuração do ambiente de desenvolvimento
 
-- Laboratório
-  - nome
-  - endereço
-  - status [ativo, inativo]
+> ### Softwares a serem instalados
 
-- Exame
-  - nome
-  - tipo [analise clinica, imagem]
-  - status [ativo, inativo]
-  
-**Funcionalidades:**
+1. [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html): Instalar o Java JDK 14
+2. [Maven](https://maven.apache.org/download.cgi?Preferred=ftp://ftp.osuosl.org/pub/apache): Instalar Maven
+3. [Docker Engine](https://docs.docker.com/docker-for-windows/install): Instalar Docker Engine
+4. [Docker Machine](https://docs.docker.com/machine/install-machine/): Instalar Docker Machine
+4. [Intellij IDE](https://www.jetbrains.com/pt-br/idea/download/#section=windows): Instalar IDE Intellij
 
-- Laboratório:
-  - cadastrar um novo laboratório;
-  - obter uma lista de laboratórios ativos;
-  - atualizar um laboratório existente;
-  - remover logicamente um laboratório ativo.
-  - O cadastro de um laboratório é considerado ativo e recebe um `id` gerado automaticamente.
-  - Possibilidade de executar cadastro, atualização e remoção em lote;
+> ### Confirando IDE
 
-- Exames:
-  - cadastrar um novo exame;
-  - obter uma lista de exames ativos;
-  - atualizar um exame existente;
-  - remover logicamente um exame ativo.
-  - Um exame pode estar associado a mais de um laboratório;
-  - O cadastro de exame é considerado ativo e recebe um `id` gerado automaticamente.
-  - associar um exame ativo à um laboratório ativo;
-  - desassociar um exame ativo de um laboratório ativo;
-  - Possibilidade de executar cadastro, atualização e remoção em lote;
-  - Endpoint que faz a busca por nome do exame e retorna todos os laboratórios associados a esse exame.
+1. Baixar projeto Git
+2. Importar em Itellij IDE
+3. Instalar plugins **Lombok** e **Docker** em **file -> settings, opção plugins**
 
-# Amazon Web Services Architecture
+> ### Configurar IDE
 
-![Diagrama da aplicação e serviços AWS utilizados](src/main/resources/images/manage-labs-architecture.jpg)
+1. Configurar os dados de seu banco de dados de dados no **application.properties**
+2. criar um banco de dados chamado **manage-labs-db**
 
-# Instruções para utilização da API
+> ### Rodando aplicação Spring Boot local
+
+1. Atalizar Gradle para baixar as dependências
+2. Clicar com o Botão direito em cima do arquivo **ManageLabsApplication** e depois selecionar **Run**
+
+> ### Rodando aplicação com Docker
+
+1. Usar o comando **$ sudo systemctl start docker** para executar o docker
+2. Usar o comando **$ sudo systemctl enable docker** para executar o docker juntamente com o sistema
+3. Acessar menu **Gradle** do canto direito, após **projectName -> Tasks -> Docker**
+4. Usar a opção **DockerClean** para limpar o cache
+5. Usar a opção **Docker** para gerar nova imagem no Docker
+6. Acessar o menu **View -> Tool Windows -> Services
+7. Criar conexão com o Docker do tipo **Unix Socket**
+
+> ### Rodando aplicação através da imagem Docker
+
+1. Baixar a imagem em [Docker Hub](https://hub.docker.com/repository/docker/rhribeiro25/manage-labs)
+2. Executar o seguinte comando **$ docker run -it -p 9090:9090 rhribeiro25/manage-labs:1.0.3**
+
+> ## Instruções para utilização da API
 
 - [GitHub](https://github.com/rhribeiro25/manageLabs): A aplicação pode ser executada facilmente como uma aplicação Spring Boot tradicional, na porta 9090, o banco de dados configurado é o MySQL contido no Amazon RDS.
 - [Docker Hub](https://hub.docker.com/repository/docker/rhribeiro25/manage-labs): Como alternativa podemos executada facilmente a aplicação pela imagem Docker contida no Docker Hub, também na porta 9090, o banco de dados configurado é o MySQL contido no Amazon RDS.
@@ -58,11 +63,11 @@
 - [labs-update](src/main/resources/files/csv/labs-update.csv): Arquivo para atualização de Laboratórios em lote.
 - [labs-delete](src/main/resources/files/csv/labs-delete.csv): Arquivo para remoção lógica de Laboratórios em lote.
 
-# Executando a API
+> ## Proposta para Amazon Web Services Architecture
 
-- **Comando Docker:** $ docker run -it -p 9090:9090 rhribeiro25/manage-labs:1.0.3
-- **Login:** admin
-- **Password:** manageLabs@2020
+![Diagrama da aplicação e serviços AWS utilizados](src/main/resources/images/manage-labs-architecture.jpg)
+
+
 
 
 “O dia que você acreditar ter atingido todo o seu potencial é o dia que não aconteceu. Por que você ainda tem o HOJE.” – Autor: Nick Vujicic
