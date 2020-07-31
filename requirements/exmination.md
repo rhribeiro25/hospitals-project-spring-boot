@@ -27,11 +27,13 @@
 4.  ✅ **Cadastra** um novo exame
 5.  ✅ Retorna **201** com o token de acesso e o nome do usuário
 
+
 1.  ✅ Recebe uma requisição do tipo **POST** na rota **/manage-labs/examinations/create-by-batch**
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
 3.  ✅ Valida o tamanho do campo **nome** sendo de 7 a 63 caracteres
 4.  ✅ **Cadastra** exames através de arquivo CSV
 5.  ✅ Retorna **201** com o token de acesso e o nome do usuário
+
 
 1.  ✅ Recebe uma requisição do tipo **UPDATE** na rota **/manage-labs/examinations/update**
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
