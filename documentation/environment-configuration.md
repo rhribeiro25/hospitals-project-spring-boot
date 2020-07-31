@@ -14,10 +14,8 @@
 4.  ✅ Remover logicamente um exame ativo.
 5.  ✅ Um exame pode estar associado a mais de um laboratório;
 6.  ✅ O cadastro de exame é considerado ativo e recebe um id gerado automaticamente.
-7.  ✅ Associar um exame ativo à um laboratório ativo;
-8.  ✅ Desassociar um exame ativo de um laboratório ativo;
-9.  ✅ Possibilidade de executar cadastro, atualização e remoção em lote;
-10. ✅ Endpoint que faz a busca por nome do exame e retorna todos os laboratórios associados a esse exame.
+7.  ✅ Possibilidade de executar cadastro, atualização e remoção em lote;
+8.  ✅ Endpoint que faz a busca por nome do exame e retorna todos os laboratórios associados a esse exame.
 
 > ## Casos de sucesso
 
@@ -99,6 +97,6 @@
 
 1.  ✅ Retorna erro **404** se a API não existir
 2.  ✅ Retorna erro **400** se nome ou tipo não forem fornecidos pelo client
-3.  ✅ Retorna erro **400** se o campo email ou tipo forém inválidos
-4.  ✅ Retorna erro **401** se for fornecido as credenciais para a consulta
-5.  ✅ Retorna erro **500** se der algum erro interno do servidor na criaçao, updte, delete ou busca.
+3.  ✅ Retorna erro **400** se o campo nome ou tipo forém inválidos
+4.  ✅ Retorna erro **401** se não for fornecido as credenciais para a consulta
+5.  ✅ Retorna erro **500** se der algum erro interno no servidor ao criar, atualizar, deletar ou buscar.
