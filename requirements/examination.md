@@ -97,6 +97,6 @@
 
 1.  ✅ Retorna erro **404** se a API não existir
 2.  ✅ Retorna erro **400** se nome ou tipo não forem fornecidos pelo client
-3.  ✅ Retorna erro **400** se o campo email ou tipo forém inválidos
-4.  ✅ Retorna erro **401** se for fornecido as credenciais para a consulta
-5.  ✅ Retorna erro **500** se der algum erro interno do servidor na criaçao, updte, delete ou busca.
+3.  ✅ Retorna erro **400** se o campo nome ou tipo forém inválidos
+4.  ✅ Retorna erro **401** se não for fornecido as credenciais para a consulta
+5.  ✅ Retorna erro **500** se der algum erro interno no servidor ao criar, atualizar, deletar ou buscar.
