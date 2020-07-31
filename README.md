@@ -6,8 +6,8 @@
 
 > ## Credenciais admin para acesso as APIs
 
-**Login:** admin
-**Password:** manageLabs@2020
+- **Login:** admin
+- **Password:** manageLabs@2020
 
 > ## Instruções para configuração do ambiente de desenvolvimento
 
