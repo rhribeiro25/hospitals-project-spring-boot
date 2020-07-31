@@ -3,7 +3,7 @@
 > ## Modelo
 
 1.  ✅ nome
-2.  ✅ tipo [analise clinica, imagem]
+2.  ✅ tipo [analise, clinica, imagem]
 3.  ✅ status [ativo, inativo]
 
 > ## Funcionalidades
