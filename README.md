@@ -1,3 +1,9 @@
+> ## APIs construídas no treinamento
+
+1. [Exame](./requirements/examination.md)
+2. [Laboratório](./requirements/laboratory.md)
+
+
 # Serviços a serem desenvolvidos:
 
 **Modelos**
