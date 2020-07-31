@@ -2,6 +2,7 @@
 
 1. [Exame](./requirements/examination.md)
 2. [Laboratório](./requirements/laboratory.md)
+3. [Laboratório](./requirements/laboratory.md)
 
 
 # Serviços a serem desenvolvidos:
