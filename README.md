@@ -4,7 +4,7 @@
 - [Laboratório](./documentation/laboratory.md)
 - [Associação](./documentation/association.md)
 
-> # Credenciais admin para acesso as APIs
+> # Credenciais para acesso as APIs
 
 - **Login:** admin
 - **Password:** manageLabs@2020
