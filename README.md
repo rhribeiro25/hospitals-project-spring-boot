@@ -47,8 +47,9 @@
 
 > ### Rodando a aplicação através da imagem Docker
 
-1. Baixar a imagem em [Docker Hub](https://hub.docker.com/repository/docker/rhribeiro25/manage-labs)
-2. Executar o seguinte comando **$ docker run -it -p 9090:9090 rhribeiro25/manage-labs:1.0.3**
+1. Usar o comando **$ sudo systemctl start docker** para executar o docker
+2. Usar o comando **$ sudo systemctl enable docker** para executar o docker juntamente com o sistema
+3. Executar o seguinte comando **$ docker run -it -p 9090:9090 rhribeiro25/manage-labs:1.0.3**
 
 > ## Instruções para utilização da API
 
