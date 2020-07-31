@@ -1,4 +1,4 @@
-# Arquitetura e ferramentas utilizadas no projeto
+# Arquitetura, metodologias e ferramentas utilizadas no projeto
 
 > ## Princípios
 
