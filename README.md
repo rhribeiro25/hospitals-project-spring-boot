@@ -22,13 +22,13 @@
 > ### Confirando IDE
 
 1. Baixar projeto Git
-2. Importar em Itellij IDE
+2. Importar em Intellij IDE
 3. Instalar plugins **Lombok** e **Docker** em **file -> settings, opção plugins**
 
-> ### Configurar IDE
+> ### Configurando Banco de Dados
 
-1. Configurar os dados de seu banco de dados de dados no **application.properties**
-2. criar um banco de dados chamado **manage-labs-db**
+1. Alterar configurações de banco de dados no arquivo **application.properties**
+2. Criar um banco de dados chamado **manage-labs-db**
 
 > ### Rodando a aplicação Spring Boot localmente
 
