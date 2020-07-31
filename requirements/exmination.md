@@ -25,53 +25,53 @@
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
 3.  ✅ Valida o tamanho do campo **nome** sendo de 7 a 63 caracteres
 4.  ✅ **Cadastra** um novo exame
-5.  ✅ Retorna **201** com o token de acesso e o nome do usuário
+5.  ✅ Retorna **201** e o exame persistido
 
 1.  ✅ Recebe uma requisição do tipo **POST** na rota **/manage-labs/examinations/create-by-batch**
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
 3.  ✅ Valida o tamanho do campo **nome** sendo de 7 a 63 caracteres
 4.  ✅ **Cadastra** exames através de arquivo CSV
-5.  ✅ Retorna **201** com o token de acesso e o nome do usuário
+5.  ✅ Retorna **201** com COMPLETED
 
 1.  ✅ Recebe uma requisição do tipo **UPDATE** na rota **/manage-labs/examinations/update**
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
 3.  ✅ Valida o tamanho do campo **nome** sendo de 7 a 63 caracteres
 4.  ✅ **Atualiza** determinado exame
-5.  ✅ Retorna **200** com o token de acesso e o nome do usuário
+5.  ✅ Retorna **200** e o exame atualizado
 
 1.  ✅ Recebe uma requisição do tipo **UPDATE** na rota **/manage-labs/examinations/update-by-batch**
 2.  ✅ Valida dados obrigatórios **nome** e **tipo**
 3.  ✅ Valida o tamanho do campo **nome** sendo de 7 a 63 caracteres
 4.  ✅ **Atualiza** exames através de arquivo CSV
-5.  ✅ Retorna **200** com o token de acesso e o nome do usuário
+5.  ✅ Retorna **200** com COMPLETED
 
 1.  ✅ Recebe uma requisição do tipo **DELETE** na rota **/manage-labs/examinations/delete**
 2.  ✅ **Deleta** logicamente determinado exame
-3.  ✅ Retorna **200** com o token de acesso e o nome do usuário
+3.  ✅ Retorna **200** com a mensagem de sucesso
 
 1.  ✅ Recebe uma requisição do tipo **DELETE** na rota **/manage-labs/examinations/delete-by-batch**
 2.  ✅ **Deleta** logicamente exames através de arquivo CSV
-3.  ✅ Retorna **200** com o token de acesso e o nome do usuário
+3.  ✅ Retorna **200** com COMPLETED
 
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-by-id**
 2.  ✅ **Busca** o exame através de um id válido
-3.  ✅ Retorna **200** com o token de acesso e o nome do usuário
+3.  ✅ Retorna **200** e o exame consultado
 
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-all**
 2.  ✅ **Busca** todos os exames com paginação
-3.  ✅ Retorna **200** com o token de acesso e o nome do usuário
+3.  ✅ Retorna **200** e a lista de exames
 
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-by-status**
 2.  ✅ **Busca** todos os exames com paginação através de um deterninado status válido
-3.  ✅ Retorna **200** com o token de acesso e o nome do usuário
+3.  ✅ Retorna **200** e a lista de exames
 
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-labs-by-exam-name**
 2.  ✅ **Busca** todos os laboratórios com paginação através de um deterninado nome de exame válido
-3.  ✅ Retorna **200** com o token de acesso e o nome do usuário
+3.  ✅ Retorna **200** e a lista de exames
 
 1.  ✅ Recebe uma requisição do tipo **GET** na rota **/manage-labs/examinations/find-by-createdat-between**
 2.  ✅ **Busca** todos os exames com paginação através de deterninadas datas **DE** e **ATÉ**
-3.  ✅ Retorna **200** com o token de acesso e o nome do usuário
+3.  ✅ Retorna **200** e a lista de exames
 
 > ## Exceções
 
