@@ -1,34 +1,23 @@
 > # APIs construídas no treinamento
 
-1. [Exame](./requirements/examination.md)
-2. [Laboratório](./requirements/laboratory.md)
-3. [Associação](./requirements/association.md)
+1. [Exame](./documentation/examination.md)
+2. [Laboratório](./documentation/laboratory.md)
+3. [Associação](./documentation/association.md)
 
 > # Credenciais admin para acesso as APIs
 
 - **Login:** admin
 - **Password:** manageLabs@2020
 
-> # Instruções para configuração do ambiente de desenvolvimento
+> # Configuração de Ambiente
 
-> ### Softwares a serem instalados
+- [Configuração de Ambiente](./documentation/environment-configuration.md)
 
-- [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html): Instalar o Java JDK 14
-- [Maven](https://maven.apache.org/download.cgi?Preferred=ftp://ftp.osuosl.org/pub/apache): Instalar Maven
-- [Docker Engine](https://docs.docker.com/docker-for-windows/install): Instalar Docker Engine
-- [Docker Machine](https://docs.docker.com/machine/install-machine/): Instalar Docker Machine
-- [Intellij IDE](https://www.jetbrains.com/pt-br/idea/download/#section=windows): Instalar IDE Intellij
+> # Instruções de API
 
-> ### Confirando IDE
+> # Arquitetura do projeto
 
-1. Baixar projeto Git
-2. Importar em Intellij IDE
-3. Instalar plugins **Lombok** e **Docker** em **file -> settings, opção plugins**
-
-> ### Configurando Banco de Dados
-
-1. Alterar configurações de banco de dados no arquivo **application.properties**
-2. Criar um banco de dados chamado **manage-labs-db**
+> # Arquitetura do AWS
 
 > ### Rodando a aplicação Spring Boot localmente
 
@@ -67,7 +56,7 @@
 
 > # Proposta para Amazon Web Services Architecture
 
-![Diagrama da aplicação e serviços AWS utilizados](src/main/resources/images/manage-labs-architecture.jpg)
+![Diagrama da aplicação e serviços AWS utilizados](./documentation/manage-labs-architecture.jpg)
 
 
 
