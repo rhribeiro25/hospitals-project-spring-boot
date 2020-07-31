@@ -13,11 +13,11 @@
 
 > ### Softwares a serem instalados
 
-1. [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html): Instalar o Java JDK 14
-2. [Maven](https://maven.apache.org/download.cgi?Preferred=ftp://ftp.osuosl.org/pub/apache): Instalar Maven
-3. [Docker Engine](https://docs.docker.com/docker-for-windows/install): Instalar Docker Engine
-4. [Docker Machine](https://docs.docker.com/machine/install-machine/): Instalar Docker Machine
-4. [Intellij IDE](https://www.jetbrains.com/pt-br/idea/download/#section=windows): Instalar IDE Intellij
+- [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html): Instalar o Java JDK 14
+- [Maven](https://maven.apache.org/download.cgi?Preferred=ftp://ftp.osuosl.org/pub/apache): Instalar Maven
+- [Docker Engine](https://docs.docker.com/docker-for-windows/install): Instalar Docker Engine
+- [Docker Machine](https://docs.docker.com/machine/install-machine/): Instalar Docker Machine
+- [Intellij IDE](https://www.jetbrains.com/pt-br/idea/download/#section=windows): Instalar IDE Intellij
 
 > ### Confirando IDE
 
@@ -74,4 +74,3 @@
 
 “O dia que você acreditar ter atingido todo o seu potencial é o dia que não aconteceu. Por que você ainda tem o HOJE.” – Autor: Nick Vujicic
 
-Obrigado...
