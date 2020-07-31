@@ -1,7 +1,7 @@
 > ## Requisitos da API
 
-- [Usuário](./requirements/signup.md)
-- [Login](./requirements/login.md)
+- [Usuário](./documentation/signup.md)
+- [Login](./documentation/login.md)
 - [Exame](./documentation/examination.md)
 - [Laboratório](./documentation/laboratory.md)
 - [Associação](./documentation/association.md)
