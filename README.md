@@ -9,7 +9,7 @@
 - **Login:** admin
 - **Password:** manageLabs@2020
 
-> # Configuração de Ambiente
+> # Configuração de Ambiente e execução da aplicação
 
 - [Configuração de Ambiente](./documentation/environment-configuration.md)
 
