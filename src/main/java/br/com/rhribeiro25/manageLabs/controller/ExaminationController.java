@@ -173,7 +173,6 @@ public class ExaminationController {
         this.verifyExistsExams(exams);
         return new ResponseEntity<>(ExaminationDTOResponse.returnDtosToShow(exams), HttpStatus.OK);
     }
-    
 
     @ApiOperation(value = "Salvar Exames", notes = "Salva exame e laboratórios se necessário")
     @ApiResponses(value = {@ApiResponse(code = 201, message = "CREATE", response = ExaminationDTOResponse.class)})
