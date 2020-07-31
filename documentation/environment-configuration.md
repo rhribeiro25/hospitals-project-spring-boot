@@ -1,6 +1,6 @@
 # Instruções para configuração do ambiente de desenvolvimento
 
-> ### Softwares a serem instalados
+> ## Softwares a serem instalados
 
 - [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html): Instalar o Java JDK 14
 - [Maven](https://maven.apache.org/download.cgi?Preferred=ftp://ftp.osuosl.org/pub/apache): Instalar Maven
@@ -8,25 +8,25 @@
 - [Docker Machine](https://docs.docker.com/machine/install-machine/): Instalar Docker Machine
 - [Intellij IDE](https://www.jetbrains.com/pt-br/idea/download/#section=windows): Instalar IDE Intellij
 
-> ### Confirando IDE
+> ## Confirando IDE
 
 1. Baixar projeto Git
 2. Importar em Intellij IDE
 3. Instalar plugins **Lombok** e **Docker** em **file -> settings, opção plugins**
 
-> ### Configurando Banco de Dados
+> ## Configurando Banco de Dados
 
 1. Alterar configurações de banco de dados no arquivo **application.properties**
 2. Criar um banco de dados chamado **manage-labs-db**
 
 # Instruções para execução da aplicação
 
-> ### Executando a aplicação Spring Boot localmente
+> ## Executando a aplicação Spring Boot localmente
 
 1. Atalizar Gradle para baixar as dependências
 2. Clicar com o Botão direito em cima do arquivo **ManageLabsApplication** e depois selecionar **Run**
 
-> ### Executando a aplicação com Docker
+> ## Executando a aplicação com Docker
 
 1. Usar o comando **$ sudo systemctl start docker** para executar o docker
 2. Usar o comando **$ sudo systemctl enable docker** para executar o docker juntamente com o sistema
@@ -37,7 +37,7 @@
 7. Criar conexão com o Docker do tipo **Unix Socket**
 8. Criar e executar um container através da imagem gerada
 
-> ### Executando a aplicação através da imagem Docker
+> ## Executando a aplicação através da imagem Docker
 
 1. Usar o comando **$ sudo systemctl start docker** para executar o docker
 2. Usar o comando **$ sudo systemctl enable docker** para executar o docker juntamente com o sistema
