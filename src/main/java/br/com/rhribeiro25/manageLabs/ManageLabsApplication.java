@@ -1,7 +1,6 @@
 package br.com.rhribeiro25.manageLabs;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -24,12 +23,16 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EntityScan(basePackages = { "br.com.rhribeiro25.manageLabs.model" })
 @EnableJpaRepositories(basePackages = { "br.com.rhribeiro25.manageLabs.repository" })
 @EnableSwagger2
+@Slf4j
 public class ManageLabsApplication {
-	private static final Logger log = LoggerFactory.getLogger(ManageLabsApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(ManageLabsApplication.class, args);
-		log.info("Starting ManageLabs");
+		log.info("Starting Managelabs!");
+		log.error("Starting Managelabs!");
+		log.debug("Starting Managelabs!");
+		log.warn("Starting Managelabs!");
+		log.info("Simple log statement with inputs {}, {} and {}", 1, 2, 3);
 	}
 
 	@Bean
