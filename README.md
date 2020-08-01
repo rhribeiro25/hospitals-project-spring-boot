@@ -23,6 +23,3 @@
 
 - [Arquitetura AWS](./documentation/aws-architecture.md)
 
-
-
-“O dia que você acreditar ter atingido todo o seu potencial é o dia que não aconteceu. Por que você ainda tem o HOJE.” – Autor: Nick Vujicic
