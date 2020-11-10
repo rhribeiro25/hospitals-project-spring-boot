@@ -1,33 +1,39 @@
 version: '3.7'
 
 services:
-  db:
-    container_name: MySQL
-    image: mysql:5.7
-    restart: always
-    environment:
-      MYSQL_USER: "renan"
-      MYSQL_PASSWORD: "123456"
-      MYSQL_ROOT_PASSWORD: "123456"
-      MYSQL_DATABASE: "manage-labs-db"
-    volumes:
-      - /home/rhribeiro25/Documents/Docker/Volumes/MySql:/var/lib/mysql
-    networks:
-      - mysql-app-network
-
-  app:
-    container_name: ManageLabs
-    image: rhribeiro25/manage-labs:1.0.3
+  api:
+    container_name: manage-labs
+    image: rhribeiro25/manage-labs:latest
     restart: always
     ports:
       - 9090:9090
     volumes:
       - /tmp:/var/lib/app
-    networks:
-      - mysql-app-network
     depends_on:
-      - db
+      - pgsql
+
+  pgsql:
+    image: 'postgres:latest'
+    environment:
+      POSTGRES_DB: 'manage-labs-db'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 'rhribeiro_25@hotmail.com'
+      PGADMIN_DEFAULT_PASSWORD: 'postgres'
+    ports:
+      - '16543:80'
+    depends_on:
+      - pgsql
 
 networks:
-  mysql-app-network:
-    driver: bridge
+  default:
+    external:
+      name: manage-labs-net
